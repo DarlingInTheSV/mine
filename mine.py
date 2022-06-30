@@ -126,7 +126,7 @@ for location in locations:
             ['vm', 'create', '--resource-group', 'myResourceGroup', '--name',
              f'{location}-{size1_abbreviation}-{count}', '--image', 'UbuntuLTS',
              '--size', f'{size1_name}', '--location', f'{location}', '--admin-username',
-             'azureuser', '--admin-password', '6uPF5Cofvyjcew9', '--custom-data',
+             'azureuser2334', '--admin-password', '6uPF5566%C!ofvyj@cew9', '--custom-data',
              'cloud-init.txt', "--no-wait"])
     if type != 2:
         count = 0
